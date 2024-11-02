@@ -20,6 +20,9 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'biker-zone-primary': '#E76F51',
+            
+           
           },
           fontFamily: {
            
@@ -35,13 +38,14 @@
 </head>
 <body class="font-poppins">
     <!-- Header section -->
-     <header>
+     <header class="container mx-auto">
       <!-- navbar -->
       <div class="navbar bg-base-100 flex justify-between">
         <div class="navbar-start">
           <div class="dropdown">
             <!-- toggle for small device -->
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn font-bold lg:hidden">
+              <!-- toggle img -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -55,6 +59,7 @@
                   d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
+            <!-- dropdown for small device by using toggle -->
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
@@ -75,15 +80,95 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <div class="navbar-end ml-2 mr-8">
-              <a class="btn btn-warning" >Login</a>
+            <div class="navbar-end">
+              <a class="btn bg-biker-zone-primary w-32 text-white" >Login</a>
             </div>
           </div>
       </div>
 
+      <!-- slider/carousel -->
+
+      <div class="carousel w-full bg-orange-50 ">
+        <!-- for slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <!-- slide -->
+           <div class="flex p-28 justify-around gap-28 items-center">
+            <!-- TExt -->
+             <div class="flex-1 space-y-4 w-[470px]">
+              <h1 class="text-4xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+              <p>Amet minim mollit non deserunt ullamco 
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="btn bg-biker-zone-primary text-white">Purchase</button>
+
+             </div>
+             <!-- Image -->
+              <div class="flex-1">
+                <img class="w-[400px]"
+                src="images/slider/bike1.png"
+                 />
+              </div>
+           </div>
+         
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- for slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <!-- slide -->
+           <div class="flex p-28 justify-around gap-28 items-center">
+            <!-- TExt -->
+             <div class="flex-1 space-y-4 w-[470px]">
+              <h1 class="text-4xl font-bold">Bumbum-on B1B2 V4 <br> with Smile</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel illum, eum libero ipsam nostrum ullam officia laborum quia. Necessitatibus eius enioluptatem</p>
+                <button class="btn bg-biker-zone-primary text-white">Purchase</button>
+
+             </div>
+             <!-- Image -->
+              <div class="flex-1">
+                <img class="w-[400px]"
+                src="images/slider/bike2.png"
+                 />
+              </div>
+           </div>
+         
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- for slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <!-- slide -->
+           <div class="flex p-28 justify-around gap-28 items-center">
+            <!-- TExt -->
+             <div class="flex-1 space-y-4 w-[470px]">
+              <h1 class="text-4xl font-bold">Bazaz-on T10 V4 <br> with Smile</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quasi magni totam reiciendis officia beatae hic nostrum sequi.</p>
+                <button class="btn bg-biker-zone-primary text-white">Purchase</button>
+
+             </div>
+             <!-- Image -->
+              <div class="flex-1">
+                <img class="w-[400px]"
+                src="images/slider/bike3.png"
+                 />
+              </div>
+           </div>
+         
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+       
+      </div>
+
      </header>
      <!-- Main section -->
-      <main>
+      <main class="container mx-auto">
 
       </main>
       <!-- Footer section -->
